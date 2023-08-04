@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\StaffController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [StaffController::class, 'index']);
+Route::get('/', [StudentController::class, 'index'])->name('student.home');
+
